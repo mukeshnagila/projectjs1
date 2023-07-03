@@ -1,0 +1,365 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #3D087B;
+    height: 1vh;
+}
+
+.header{
+    padding: 25px;
+}
+
+.container{
+    padding: 20px 200px;
+}
+
+.time_message{
+    float: right;
+    bottom: 134px;
+    position: relative;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+.clock1{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    width: 480px;
+    height: 110px;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 3;
+}
+
+.clock2{
+    position: absolute;
+    width: 360px;
+    height: 110px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    opacity: 0.71;
+    z-index: 2;
+}
+
+.clock3{
+    position: absolute;
+    width: 300px;
+    height: 110px;
+    margin-top: 20px;
+    /* display: inline-block; */
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    opacity: 0.22;
+    z-index: 1;
+}
+
+.T1{
+    color: #3D087B;
+    text-transform: uppercase;
+    text-decoration: solid;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) 20px/32px var(--unnamed-font-family-manrope);
+}
+
+.T2{
+    width: 65px;
+    height: 70px;
+    text-align: center;
+    background: transparent url('./img/timeline.svg') 0% 0% no-repeat padding-box;
+}
+
+.a{
+    font-size: 35px;
+    color: #8A11BF;
+}
+.a2{
+    font-size: 20px;
+    color: #8A11BF;
+}
+
+.T3{
+    width: 65px;
+    height: 70px;
+    text-align: center;
+    background: transparent url('./img/timeline.svg') 0% 0% no-repeat padding-box;
+}
+
+.T4{
+    width: 65px;
+    height: 70px;
+    text-align: center;
+    background: transparent url('./img/timeline.svg') 0% 0% no-repeat padding-box;
+}
+
+.T5{
+    width: 65px;
+    height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-36)/var(--unnamed-line-spacing-43) var(--unnamed-font-family-barlow);
+    font: normal normal normal 35px/70px Barlow;
+    background: transparent url('./img/AM_svg.svg') 0% 0% no-repeat padding-box;
+}
+
+.spanT{
+    color: #8A11BF;
+    margin: 0px -15px;
+    font-size: 42px;
+}
+
+.message{
+    width: 465px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 170px;
+    color: #8E53F0;
+    font: normal normal 900 24px/48px Bauhaus Hv BT;
+    padding: 20px 15px;
+}
+
+.content{
+    padding: 10px;
+    width: 500px;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+}
+
+.items{
+    height: 370;
+    width: 500;
+    margin: 0%;
+    padding: 0%;
+}
+
+.item1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.I2{
+    padding: 10px;
+    color: #3D087B;
+    font: normal normal normal 18px/28px Manrope;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-28) var(--unnamed-font-family-manrope);
+}
+
+.I3{
+    padding: 10px;
+    box-shadow: 5px 5px 3px #a2a5cc;
+}
+
+select{
+    width: 200px;
+    height: 30px;
+    color: #3D087B;
+}
+
+.image{
+    float: right;
+    position: relative;
+    bottom: 115px;
+}
+
+.note{
+    width: 520px;
+    height: 35px;
+    margin-top: 20px;
+    background:  #6638b0 0% 0% no-repeat padding-box;
+    background: #8E53F0(255, 255, 255, 0.5);
+    /* opacity: 0.23; */
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+
+.p1{
+    color: #FFFFfF;
+    font: normal normal 900 24px/34px Bauhaus Hv BT;
+    opacity: 1;
+}
+
+.setalarm{
+    width: 520px;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.button {
+    width: 270px;
+    height: 50px;
+    background: linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-origin: padding-box;
+    background-clip: padding-box;
+    border-radius: 5px;
+    cursor: pointer;
+    font: normal 600 24px/38px Manrope;
+    color: #ffffff;
+    position: relative;
+}
+  
+.button::before {
+    content: 'Set Time';
+}
+  
+.button:hover {
+    background-position: right;
+}
+  
+.button:hover::before {
+    content: '';
+}
+  
+.button:hover::after {
+    content: 'Party Time!';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: normal 600 24px/38px Manrope;
+    color: #ffffff;
+}
+
+.remendar{
+    width: 230px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    opacity: 0.22;
+}
+.p2{
+    font: normal normal bold 15px/25px Manrope;
+    opacity: 1;
+    color: #a937b1;
+}
+
+
+@media only screen and (min-width:1035px) and (max-width:1140px) {
+
+    .container{
+        padding: 20px 8px;
+    }
+    
+}
+
+@media only screen and (min-width:1141px) and (max-width:1240px) {
+
+    .container{
+        padding: 20px 55px;
+    }
+    
+}
+
+@media only screen and (min-width:700px) and (max-width:1075px) {
+
+    .container{
+        text-align: center;
+        padding: 20px 150px;
+    }
+
+    .time_message{
+        float: none;
+        bottom: 50px;
+    }
+
+    .main{
+        width: 540px;
+    }
+    
+    .main2{
+        position: relative;
+        display: flex;
+    }
+
+    .content{
+        width: none;
+    }
+
+    .image{
+        margin-top: 50px;
+        float: none;
+        position: static;
+    }
+
+    .note{
+        width: none;
+    }
+
+    .setalarm{
+        width: none;
+    }
+
+
+    
+}
+
+@media only screen and (min-width:200px) and (max-width:700px) {
+
+    .container{
+        text-align: center;
+        padding: 20px 5px;
+    }
+
+    .header{
+        padding: 20px 165px;
+    }
+
+    .time_message{
+        float: none;
+        bottom: 50px;
+        width: fit-content;
+    }
+
+    .main{
+        width: 540px;
+    }
+    
+    .main2{
+        position: relative;
+        display: flex;
+    }
+
+    .content{
+        width: none;
+    }
+
+    .image{
+        margin-top: 50px;
+        float: none;
+        position: static;
+    }
+
+    .note{
+        width: none;
+    }
+
+    .setalarm{
+        width: none;
+    }
+
+    .message{
+        width: 493px;
+    }
+
+
+    
+}
