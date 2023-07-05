@@ -261,7 +261,7 @@ select{
     
 }
 
-@media only screen and (min-width:1141px) and (max-width:1240px) {
+@media only screen and (min-width:1141px) and (max-width:1480px) {
 
     .container{
         padding: 20px 55px;
@@ -269,10 +269,9 @@ select{
     
 }
 
-@media only screen and (min-width:700px) and (max-width:1075px) {
+@media only screen and (min-width:751px) and (max-width:1075px) {
 
     .container{
-        text-align: center;
         padding: 20px 150px;
     }
 
@@ -312,7 +311,7 @@ select{
     
 }
 
-@media only screen and (min-width:200px) and (max-width:700px) {
+@media only screen and (min-width:200px) and (max-width:750px) {
 
     .container{
         text-align: center;
@@ -320,17 +319,27 @@ select{
     }
 
     .header{
-        padding: 20px 165px;
+        padding: none;
     }
 
     .time_message{
+        width: 100%;
         float: none;
         bottom: 50px;
+        left: 12px;
         width: fit-content;
     }
 
     .main{
-        width: 540px;
+        width: 100%;
+    }
+    
+    .clock1{
+        width: 370px;
+    }
+
+    .clock2{
+        width: 325px;
     }
     
     .main2{
@@ -339,7 +348,7 @@ select{
     }
 
     .content{
-        width: none;
+        width: 94%;
     }
 
     .image{
@@ -349,17 +358,26 @@ select{
     }
 
     .note{
-        width: none;
+        width: 100%;
     }
 
     .setalarm{
-        width: none;
+        width: 100%;
     }
 
     .message{
-        width: 493px;
+        width: 100%;
     }
 
-
+    .p2{
+        font: normal normal bold 12px/24px Manrope;
+    }
     
+    .p1{
+        font: normal normal 900 22px/33px Bauhaus Hv BT;
+    }
+
+    img{
+        width: 100%;
+    }
 }
