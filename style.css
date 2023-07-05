@@ -235,7 +235,7 @@ select{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font: normal 600 24px/38px Manrope;
+    font: normal 500 20px/28px Manrope;
     color: #ffffff;
 }
 
